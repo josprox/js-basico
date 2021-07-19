@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body>
+
+    <h2>Práctica 12</h2>
+    <h2>Screen</h2>
+
+    <!--Tabla de propiedades-->
+
+    <table id="tabla">
+        <tr>
+        <th>Propiedad</th>
+        <th>valor</th>
+        </tr>
+    </table>
+
+    <script>
+        var i, tabla =document.getElementById("tabla");
+        for(i in screen){
+            tabla.innerHTML+="<tr><td>"+i+"</td><td> =" +screen[i]+"</td></tr>";
+        }
+    </script>
+    
+</body>
+</html>

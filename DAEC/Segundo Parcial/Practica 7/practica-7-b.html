@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Código 2</title>
+</head>
+<body>
+
+    <p>Click the button to display a dialog box which will ask for favorite drink</p>
+
+    <button onclick="myFunction()">try it</button>
+
+    <p id="demo"></p>
+
+    <script>
+        function myFunction() {
+            var text;
+            var favDrink = prompt("What's your favorite cocktail drink","example");
+            switch (favDrink){
+                case "Martini":
+                    text = "Excellent choise. Martini is good for your soul.";
+                    break;
+                case "Daiquiri":
+                    text = "Daiquiri is my favorite too!.";
+                    break;
+                 case "Cosmopolitan":
+                    text = "Really? Are you sure the cosmopolitan is your favorite?";
+                    break;
+                default:
+                    text = "I have never heard of that one...";
+            } document.getElementById("demo").innerHTML = text;
+        }
+    </script>
+
+</body>
+</html>

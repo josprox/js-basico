@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica 16 A</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://dev.josprox.com/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://dev.josprox.com/css/index.min.css">
+</head>
+<body>
+
+    <div class="content-original-mx">
+        <center>
+        <p>in this case JS changes the evalue of the src (source) attribute of an image</p>
+
+        <button class="btn2" onclick="document.getElementById('miimagen').src='img/Encendido.png'">Encendido</button>
+
+        <img src="img/Apagado.png" id="miimagen" class="foco" alt="">
+
+        <button class="btn1" onclick="document.getElementById('miimagen').src='img/Apagado.png'">Apagado</button>
+    </center>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="bootstrap.min.css">
+
+</head>
+<body>
+
+    <div aling="center">
+        <p><button onclick="MyMove()" class="btn btn-success">Click me</button></p>
+
+        <div id="container">
+            <div id="animate" class=""></div>
+        </div>
+
+    </div>
+
+    <script>
+        var id=null;
+        function MyMove(){
+            var elem =document.getElementById("animate");
+            var pos = 0;
+            clearInterval(id);
+            id=setInterval (frame, 5);
+            function frame(){
+                if (pos == 750){
+                    clearInterval(id);
+                }else{
+                    pos++;
+                    elem.style.bottom= pos + "px";
+                    elem.style.top=pos + "px";
+                }
+            }
+        }
+    </script>
+    
+</body>
+</html>

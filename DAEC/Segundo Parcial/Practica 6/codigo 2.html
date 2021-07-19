@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Codigo 2</title>
+</head>
+<body>
+
+    <p>Da click en el boton para demostrar los saltos de linea en un cuadro de confirmación</p>
+
+    <button onclick="myFunction()">Da click aquí</button>
+
+    <p id="demo"></p>
+
+    <script>
+        function myFunction(){
+            var txt;
+            r = confirm ("Da click en el botón aceptar/Cancelar el boton que seleccione se mostrará en la ventana de resultados");
+            if ( r == true ){
+                txt = document.write("Precione ok!");
+            } else{
+                txt = document.write("Precione cancel");
+            }
+
+            document.getElementById("demo").innerHTML = txt;
+        }
+    </script>
+    
+</body>
+</html>
